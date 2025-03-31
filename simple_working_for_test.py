@@ -8,7 +8,7 @@ async def root():
     return "yes"
 
 @app.get("/api/", response_class=HTMLResponse)
-async def api_root():  # Renamed to avoid duplication
+async def root():
     return "yes api"
 
 
@@ -22,3 +22,4 @@ async def api_root():  # Renamed to avoid duplication
 #       }
 #     ]
 #   }
+  

@@ -20,7 +20,7 @@ app.add_middleware(
 )
 
 # Load OpenAI API Key securely
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     raise ValueError("Missing OpenAI API key! Set it as an environment variable.")
 
@@ -54,17 +54,5 @@ async def read_root():
 # Endpoint to process the question and return an answer
 @app.get("/api/get_answer/", response_class=JSONResponse)
 async def get_answer(question: str = Query(..., title="Your Question")):
-    try:
-        # Call OpenAI API to get the answer
-        response = openai.Completion.create(
-            engine="text-davinci-003",  # Use the appropriate engine
-            prompt=question,
-            max_tokens=100,  # Limit the response length
-            temperature=0.7  # Adjust creativity level
-        )
-        # Extract the answer from the response
-        answer = response.choices[0].text.strip()
-        return JSONResponse(content={"answer": answer})
-    except Exception as e:
-        # Handle errors gracefully
-        return JSONResponse(content={"error": str(e)}, status_code=500)
+    answer = question
+    return JSONResponse(content={"answer":answer})# Endpoint to process the question and return an answer

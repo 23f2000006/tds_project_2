@@ -15,7 +15,7 @@ import tempfile
 import tiktoken
 from io import StringIO
 from bs4 import BeautifulSoup
-from tabula import convert_into
+#from tabula import convert_into
 from urllib.parse import urljoin
 from PIL import Image
 import numpy as np

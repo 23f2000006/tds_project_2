@@ -1,0 +1,298 @@
+q_no,question,function_name,keywords,When,properties,file,GA1,Answer,Post call,
+1,"Install and run Visual Studio Code. In your Terminal (or Command Prompt), type code -s and press Enter. Copy and paste the entire output below.
+
+What is the output of code -s?",q1_code_vsc,"visual, command, prompt, output",,,,GA1,,,
+2,"Running uv run --with httpie -- https [URL] installs the Python package httpie and sends a HTTPS request to the URL.
+
+Send a HTTPS request to https://httpbin.org/get with the URL encoded parameter email set to 23ds3000149@ds.study.iitm.ac.in
+
+What is the JSON output of the command? (Paste only the JSON body, not the headers)",q2_httpie_json,"running, uv, https, --with, httpie",,,,GA1,,,
+3,"Download readme.md and In the directory where you downloaded it, make sure it is called README.md, and run npx -y prettier@3.4.2 README.md | sha256sum.
+
+What is the output of the command?",q3_readme_shasum,"readme, prettier, sha256sum, command",,,solution_q3.py,GA1,,,
+4,"Let's make sure you can write formulas in Google Sheets. Type this formula into Google Sheets. (It won't work in Excel)
+
+=SUM(ARRAY_CONSTRAIN(SEQUENCE(100, 100, 8, 13), 1, 10))
+What is the result?",q4_array_constraint,"formula,  sheet, array, constrain, array_constrain","Done,
+Working,
+Tested",,,GA1,665,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=Let's make sure you can write formulas in Google Sheets. Type this formula into Google Sheets. (It won't work in Excel) =SUM(ARRAY_CONSTRAIN(SEQUENCE(100, 100, 8, 13), 1, 10)) What is the result?""",
+5,"Let's make sure you can write formulas in Excel. Type this formula into Excel.
+
+Note: This will ONLY work in Office 365.
+
+=SUM(TAKE(SORTBY({1,1,0,4,7,5,2,2,15,5,1,1,7,10,5,0}, {10,9,13,2,11,8,16,14,7,15,5,4,6,1,3,12}), 1, 1))
+What is the result?",q5_excel_sort,"excel, sort, formulas, formula, office",Done,,,GA1,10,,
+6,"Just above this paragraph, there's a hidden input with a secret value.
+
+What is the value in the hidden input?",q6_hidden_secret,"hidden, secret, paragraph, value",Hardcoded,Link: https://exam.sanand.workers.dev/tds-2025-01-ga1,,GA1,aofy98grpi,,
+7,"How many Wednesdays are there in the date range 1980-04-16 to 2009-02-11?
+The dates are in the year-month-day format. Include both the start and end date in your count. You can do this using any tool (e.g. Excel, Python, JavaScript, manually).",q7_day_dates,"Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays, Sundays, format, start, end, date, count",Soon,,,GA1,,"http://127.0.0.1:8000/api/?question=How%20many%20Wednesdays%20are%20there%20in%20the%20date%20range%201980-04-16%20to%202010-02-11?%20The%20dates%20are%20in%20the%20year-month-day%20format.%20Include%20both%20the%20start%20and%20end%20date%20in%20your%20count.%20You%20can%20do%20this%20using%20any%20tool%20(e.g.%20Excel,%20Python,%20JavaScript,%20manually).",
+8,"Download and unzip file which has a single extract.csv file inside.
+
+What is the value in the ""answer"" column of the CSV file?",q8_extract_csv,"unzip, extract, answer, value, column",,,,GA1,04ee0,"$ curl -X POST ""http://127.0.0.1:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=What is the value in the \""answer\"" column of the CSV file?""   -F ""file=@q-extract-csv-zip.zip""",
+9,"Let's make sure you know how to use JSON. Sort this JSON array of objects by the value of the age field. In case of a tie, sort by the name field. Paste the resulting JSON below without any spaces or newlines.
+
+[{""name"":""Alice"",""age"":48},{""name"":""Bob"",""age"":69},{""name"":""Charlie"",""age"":27},{""name"":""David"",""age"":26},{""name"":""Emma"",""age"":68},{""name"":""Frank"",""age"":90},{""name"":""Grace"",""age"":78},{""name"":""Henry"",""age"":27},{""name"":""Ivy"",""age"":85},{""name"":""Jack"",""age"":74},{""name"":""Karen"",""age"":43},{""name"":""Liam"",""age"":52},{""name"":""Mary"",""age"":19},{""name"":""Nora"",""age"":36},{""name"":""Oscar"",""age"":5},{""name"":""Paul"",""age"":11}]",q9_json_sort,"json, sort, spaces, newlines, field","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",Json file,,GA1,,"curl -X POST ""https://iitm-tds-project-two.vercel.app/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F ""question=Sort this JSON array of objects by the value of the age field. In case of a tie, sort by the name field. Paste the resulting JSON below without any spaces or newlines"" \
+  -F ""file=@GA1_question9.json""",
+10,"Download  file and use multi-cursors and convert it into a single JSON object, where key=value pairs are converted into {key: value, key: value, ...}.
+
+What's the result when you paste the JSON at tools-in-data-science.pages.dev/jsonhash and click the Hash button?",q10_multi_cursors,"multi-cursors, multi, cursors, single, json, hash, button",Soon,,,GA1,,,
+11,,,,,,,GA1,,,
+12,,,,,,,GA1,,,
+13,"Create a new public repository. Commit a single JSON file called email.json with the value {""email"": ""23ds3000149@ds.study.iitm.ac.in""} and push it.
+Enter the raw Github URL of email.json so we can verify it. (It might look like https://raw.githubusercontent.com/[GITHUB ID]/[REPO NAME]/main/email.json.)",q13_github_public,"push, raw, url",,,,GA1,,,
+14,,,,,,,GA1,,,
+15,"Download the file  and extract it. Use ls with options to list all files in the folder along with their date and file size.
+
+What's the total size of all files at least 427 bytes large and modified on or after Mon, 12 May, 2008, 6:32 am GMT+1?",q15_date_size,"ls, date, file,  modified","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,GA1,,"curl -X POST ""http://localhost:8000/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F ""question=Download the file  and extract it. Use ls with options to list all files in the folder along with their date and file size. What's the total size of all files at least 427 bytes large and modified on or after Mon, 12 May, 2008, 6:32 am GMT+1?"" \
+  -F ""file=@q15-list-files-attributes.zip""",
+16,"Download and extract it. Use mv to move all files under folders into an empty folder. Then rename all files replacing each digit with the next. 1 becomes 2, 9 becomes 0, a1b9c.txt becomes a2b0c.txt. What does running grep . * | LC_ALL=C sort | sha256sum in bash on that folder show?",q16_mv_rename,"mv, rename, sha256sum","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,GA1,,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=Download and extract it. Use mv to move all files under folders into an empty folder. Then rename all files replacing each digit with the next. 1 becomes 2, 9 becomes 0, a1b9c.txt becomes a2b0c.txt. What does running grep . * | LC_ALL=C sort | sha256sum in bash on that folder show?""  -F ""file=@q16-move-rename-files.zip""","curl -X POST ""https://iitm-tds-project-two.vercel.app/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F ""question=Download and extract it. Use mv to move all files under folders into an empty folder. Then rename all files replacing each digit with the next. 1 becomes 2, 9 becomes 0, a1b9c.txt becomes a2b0c.txt. What does running grep . * | LC_ALL=C sort | sha256sum in bash on that folder show?"" \
+  -F ""file=@q16-move-rename-files.zip"""
+17,"Download  and extract it. It has 2 nearly identical files, a.txt and b.txt, with the same number of lines. How many lines are different between a.txt and b.txt?",q17_identical_lines,"identical, lines, different, between","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,GA1,8,"curl -X POST ""http://localhost:8000/api/"" \
+-H ""Content-Type: multipart/form-data"" \
+-F ""question=Download  and extract it. It has 2 nearly identical files, a.txt and b.txt, with the same number of lines. How many lines are different between a.txt and b.txt?""   -F ""file=@q17-compare-files.zip""",
+18,"There is a tickets table in a SQLite database that has columns type, units, and price. Each row is a customer bid for a concert ticket. What is the total sales of all the items in the ""Gold"" ticket type? Write SQL to calculate it.",q18_sqlite_sales,"sqlite, units, ticket, type","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,GA1,,,
+19,"Write documentation in Markdown for an **imaginary** analysis of the number of steps you walked each day for a week, comparing over time and with friends. The Markdown must include",q19_markdown_gen,"write, documentation, markdown","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,GA2,"# Introduction
+It's my journey on my everyday walking habit
+
+## Methodology
+Simple habitual changes that got me into regular walking habit
+
+**important**
+To understand your own interests
+
+*note* I am keeping this simple
+
+You can use the `len()` function to get the length of any dict type of variable in python
+
+```python
+# This is Python code
+def not_hello_world():
+    print(""Time to read a new book!"")
+```
+### I do not miss to carry a 
+- Backbag
+
+#### How I created this habit to go on a walk everyday morning without a miss?
+1. Coffee
+2. Book to read at least 2 pages per day
+3. A small talk with my Cafe staffs
+
+| Genre         | Title of the Book |
+|-----------------|--------------------------------|
+| Philosophy | Everything is f*cked       |
+
+[To Buy](https://www.amazon.co.uk/EVERY-THING-CKED-BOOK-ABOUT/dp/0062888439)
+
+![Cover Page](https://dailystoic.com/wp-content/uploads/2019/12/image1-768x960.png)
+
+> At the end, everything is meaningless !","curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=Write documentation in Markdown for an **imaginary** analysis of the number of steps you walked each day for a week, comparing over time and with friends. The Markdown must include""",
+20,"Download the image below and compress it losslessly to an image that is less than 1,500 bytes.
+By losslessly, we mean that every pixel in the new image should be identical to the original image.
+
+Upload your losslessly compressed image (less than 1,500 bytes)",q20_image_compress,"compress, compressed, image, losslessly","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,GA2,,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=Download the image below and compress it losslessly to an image that is less than 1,500 bytes. By losslessly, we mean that every pixel in the new image should be identical to the original image. Upload your losslessly compressed image, less than 1,500 bytes""   -F ""file=@shapes.png""",
+21,"Publish a page using GitHub Pages that showcases your work. Ensure that your email address 23f2000006@ds.study.iitm.ac.in is in the page's HTML.
+
+GitHub pages are served via CloudFlare which obfuscates emails. So, wrap your email address inside a:
+
+<!--email_off-->23f2000006@ds.study.iitm.ac.in<!--/email_off-->
+What is the GitHub Pages URL? It might look like: https://[USER].github.io/[REPO]/",q21_github_page,"github, pages, address","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,GA2,https://github.com/23f2000006/tds_project2_alt.git,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F 'question=Publish a page using GitHub Pages that showcases your work. Ensure that your email address <!--email_off-->23ds3000149@ds.study.iitm.ac.in<!--/email_off--> is in the page HTML. GitHub Pages are served via CloudFlare which obfuscates emails. What is the GitHub Pages URL? It might look like: https://[USER].github.io/[REPO]/'","curl -X POST ""https://iitm-tds-project-two.vercel.app/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F 'question=Publish a page using GitHub Pages that showcases your work. Ensure that your email address <!--email_off-->23ds3000149@ds.study.iitm.ac.in<!--/email_off--> is in the page HTML. GitHub pages are served via CloudFlare which obfuscates emails. What is the GitHub Pages URL? It might look like: https://[USER].github.io/[REPO]/'"
+22,"Let's make sure you can access Google Colab. Run this program on Google Colab, allowing all required access to your email ID: 23f2000006@ds.study.iitm.ac.in.
+
+Some code given
+
+What is the result? (It should be a 5-character string)",q22_google_colab,"program, access",,,,GA2,702a6,,
+23,Create a new Google Colab notebook and run this code (after fixing a mistake in it) to calculate the number of pixels with a certain minimum brightness What is the result,q23_pixels_brightness,"number pixels, brightness, calculate",,,,GA2,7,,
+24,"Download this  which has the marks of 100 imaginary students.
+
+Create and deploy a Python app to Vercel. Expose an API so that when a request like https://your-app.vercel.app/api?name=X&name=Y is made, it returns a JSON response with the marks of the names X and Y in the same order, like this:
+
+{ ""marks"": [10, 20] }
+Make sure you enable CORS to allow GET requests from any origin.
+
+What is the Vercel URL? It should look like: https://your-app.vercel.app/api",,,,,,GA2,https://git-vercel-vert.vercel.app/api,,
+25,"Create a GitHub action on one of your GitHub repositories. Make sure one of the steps in the action has a name that contains your email address 23ds3000149@ds.study.iitm.ac.in. For example:
+
+jobs:
+  test:
+    steps:
+      - name: 23ds3000149@ds.study.iitm.ac.in
+        run: echo ""Hello, world!""
+      
+Trigger the action and make sure it is the most recent action.
+What is your repository URL? It will look like: https://github.com/USER/REPO",,,,,,GA2,https://github.com/Rajalakshmi12/Git-TDS-Sem4,,
+26,"Create and push an image to Docker Hub. Add a tag named 23f2000006 to the image.
+
+What is the Docker image URL? It should look like: https://hub.docker.com/repository/docker/$USER/$REPO/general",,,,,,GA2,,,
+27,"Download . This file has 2-columns:
+
+studentId: A unique identifier for each student, e.g. 1, 2, 3, ...
+class: The class (including section) of the student, e.g. 1A, 1B, ... 12A, 12B, ... 12Z
+Write a FastAPI server that serves this data. For example, /api should return all students data (in the same row and column order as the CSV file) as a JSON like this:",,,,,,GA2,What is the API URL endpoint for FastAPI? It might look like: http://127.0.0.1:8000/api,,
+28,"Download Llamafile. Run the Llama-3.2-1B-Instruct.Q6_K.llamafile model with it.
+
+Create a tunnel to the Llamafile server using ngrok.
+
+What is the ngrok URL? It might look like: https://[random].ngrok-free.app/",,,,,,GA2,https://effb-2a06-5902-4603-2000-d869-eb01-3bb8-c106.ngrok-free.app,,
+29,,,,Hardcode-Sorry,,,,"import httpx
+
+# url stores the OpenAI's API endpoint and dummy API key
+url = ""https://api.openai.com/v1/chat/completions""
+headers = {
+    ""Authorization"": ""Bearer key_4%t64$£"",
+    ""Content-Type"": ""application/json""
+}
+
+# Define the request payload with two messages as mentioned in the activity
+payload = {
+    ""model"": ""gpt-4o-mini"",
+    ""messages"": [
+        {""role"": ""system"", ""content"": ""Analyze the sentiment of the given text & classify it as GOOD, BAD, or NEUTRAL !""},
+        {""role"": ""user"", ""content"": ""q8Zl\nrnNGdi IXTIMdv Xd1 vP1 ZWF xMsEHp2LUiOAw7E1""}
+    ]
+}
+
+# Send the request to OpenAI API
+response = httpx.post(url, json=payload, headers=headers, timeout=10)
+response.raise_for_status()
+
+# Extract and print the response
+result = response.json()
+print(result)",,
+30,How many input tokens does it use up?,q30_token_count,"tokens, count","Deployed-
+Tested-
+Vercel-
+With-
+File-
+Success",,,,416,"curl -X POST ""https://iitm-tds-project-two.vercel.app/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F ""question=How many input tokens does it use up?"" \
+  -F ""file=@GA3_question30.txt""",
+31,"Write the body of the request to an OpenAI chat completion call that:
+Uses model gpt-4o-mini
+Has a system message: Respond in JSON
+Has a user message: Generate 10 random addresses in the US
+Uses structured outputs to respond with an object addresses which is an array of objects with required fields: zip (number) longitude (number) city (string) .
+Sets additionalProperties to false to prevent additional properties.
+Note that you don't need to run the request or use an API key; your task is simply to write the correct JSON body.
+
+What is the JSON body we should send to https://api.openai.com/v1/chat/completions for this?",q31_generate_llm,"gpt-4o-mini, addresses, zip, properties, generate",,,,,"{  ""model"": ""gpt-4o-mini"",  ""messages"": [    {      ""role"": ""system"",
+      ""content"": ""Respond in JSON""    },    {      ""role"": ""user"",
+      ""content"": ""Generate 10 random addresses in the US""    }  ],
+  ""response_format"": {    ""type"": ""json_schema"",    ""json_schema"": {
+      ""name"": ""address_response"",      ""strict"": true,
+      ""schema"": {        ""type"": ""object"",        ""properties"": {           ""addresses"": {            ""type"": ""array"",             ""items"": {              ""type"": ""object"",              ""properties"": {                ""zip"": { ""type"": ""number"", ""description"": ""The zip code, eg. 10001"" },
+                ""longitude"": { ""type"": ""number"", ""description"": ""The longitude, -87.2564""  },                ""city"": { ""type"": ""string"", ""description"": ""The city, eg. New York""  }              },              ""required"": [""zip"", ""longitude"", ""city""],
+              ""additionalProperties"": false            }          }        },
+        ""required"": [""addresses""],
+        ""additionalProperties"": false      }    }  }  }","curl -X POST ""http://localhost:8000/api/"" \
+-H ""Content-Type: multipart/form-data"" \
+-F ""question=As part of the integration process, you need to write the body of the request to an OpenAI chat completion call that: Uses model gpt-4o-mini Has a system message: Respond in JSON Has a user message: Generate 10 random addresses in the US Uses structured outputs to respond with an object addresses which is an array of objects with required fields: zip (number) longitude (number) city (string) . Sets additionalProperties to false to prevent additional properties. Note that you don't need to run the request or use an API key; your task is simply to write the correct JSON body.What is the JSON body we should send to https://api.openai.com/v1/chat/completions for this? (No need to run it or to use an API key""","curl -X POST ""https://iitm-tds-project-two.vercel.app/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F ""question=As part of the integration process, you need to write the body of the request to an OpenAI chat completion call that: Uses model gpt-4o-mini Has a system message: Respond in JSON Has a user message: Generate 10 random addresses in the US Uses structured outputs to respond with an object addresses which is an array of objects with required fields: zip (number) longitude (number) city (string). Sets additionalProperties to false to prevent additional properties. Note that you don't need to run the request or use an API key; your task is simply to write the correct JSON body. What is the JSON body we should send to https://api.openai.com/v1/chat/completions for this?"""
+32,"Write just the JSON body (not the URL, nor headers) for the POST request that sends these two pieces of content (text and image URL) to the OpenAI API endpoint.
+
+Use gpt-4o-mini as the model.
+Send a single user message to the model that has a text and an image_url content (in that order).
+The text content should be Extract text from this image.
+Send the image_url as a base64 URL of the image above. CAREFUL: Do not modify the image.",q32_extract_text,"gpt-4o-mini, content, text, image. extract",,,,,"{    ""model"": ""gpt-4o-mini"",    ""messages"": [{        ""role"":""user"",
+        ""content"": [            {               ""type"": ""text"",               ""text"": ""Extract text from this image""            },            {                ""type"": ""image_url"",                ""image_url"": {""url"": ""data:image/png;base64, <base image in 64 base encoding>""}            }            
+        ]    }    ]}","curl -X POST ""http://localhost:8000/api/"" \
+-H ""Content-Type: multipart/form-data"" \
+-F ""question=Write just the JSON body (not the URL, nor headers) for the POST request that sends these two pieces of content (text and image URL) to the OpenAI API endpoint. Use gpt-4o-mini as the model. Send a single user message to the model that has a text and an image_url content (in that order). The text content should be Extract text from this image. Send the image_url as a base64 URL of the image above. CAREFUL: Do not modify the image.""   -F ""file=@text_extract_image.png""","curl -X POST ""https://iitm-tds-project-two.vercel.app/api/"" -H ""Content-Type: multipart/form-data"" -F ""question=Write just the JSON body (not the URL, nor headers) for the POST request that sends these two pieces of content (text and image URL) to the OpenAI API endpoint. Use gpt-4o-mini as the model. Send a single user message to the model that has a text and an image_url content (in that order). The text content should be Extract text from this image. Send the image_url as a base64 URL of the image above. CAREFUL: Do not modify the image."" -F ""file=@text_extract_image.png"""
+33,,,,,,,,,,
+34,,,,,,,,,,
+35,,,,,,,,,,
+36,,,,,,,,,,
+37,,,,,,,,,,
+38,What is the total number of ducks across players on page number 17 of ESPN Cricinfo's ODI batting stats?,q38_ducks_count,"number, ducks, players, page, espn, odi, batting, stats",Done,,,GA4,140,127.0.0.1:8000/api/ask_question/?question=What is the total number of ducks across players on page number 17 of ESPN Cricinfo%27s ODI batting stats?,
+39,"Extract Data: Retrieve movie information from IMDb for all films that have a rating between 2 and 7.
+Format Data: Structure the extracted information into a JSON format containing the following fields:
+id: The unique identifier for the movie on IMDb.
+title: The official title of the movie.
+year: The year the movie was released.
+rating: The IMDb user rating for the movie.",q39_imdb_rating,"Retrieve, movie, rating, title, year, imdb, json",Done,"min, max values",,GA4,,,
+40,"Write a web application that exposes an API with a single query paramete country=India It should fetch the Wikipedia page of the country, extracts all headings (H1 to H6), and create a Markdown outline for the country. The outline should look like this:",q40_wikipedia,"api, single, query, country, Wikipedia, extracts, headings, Markdown",Done,country,,GA4,http://127.0.0.1:8000/execute?country=Switzerland,"http://127.0.0.1:8000/api/ask_question/?question=Write%20a%20web%20application%20that%20exposes%20an%20API%20with%20a%20single%20query%20paramete%20country=Switzerland%20It%20should%20fetch%20the%20Wikipedia%20page%20of%20the%20country,%20extracts%20all%20headings%20(H1%20to%20H6),%20and%20create%20a%20Markdown%20outline%20for%20the%20country.%20The%20outline%20should%20look%20like%20this:%20api%20endpoint%20url%20What%20is%20the%20URL%20of%20your%20API%20endp",
+41,What is the JSON weather forecast description for Vancouver?,q41_weather,"json, weather, forecast, description, Vancouver",,City?,,GA4,https://colab.research.google.com/drive/1HRSlEpuQR5upx2QAMrK1u6glEQV3AQ2_,,
+42,What is the minimum latitude of the bounding box of the city Chennai in the country India on the Nominatim API,q42_nominatim_box,"latitude, bounding, box, country, nominatim, latitude",Done,minimum latitude?,,GA4,12.9236939,,
+43,What is the link to the latest Hacker News post mentioning Hacker Culture having at least 70 points?,q43_hacker_points,"hacker, points, news, post",Done,points = 70,,GA4,,http://127.0.0.1:8000/api/?question=What%20is%20the%20link%20to%20the%20latest%20Hacker%20News%20post%20mentioning%20Hacker%20Culture%20having%20at%20least%2070%20points?,
+44,"Using the GitHub API, find all users located in the city Mumbai with over 120 followers.
+When was the newest user's GitHub profile created?",q44_github_user,"city, followers, follower, newest, profile",Soon,"number, city",,GA4,2024-03-29T06:23:16Z,,
+45,"Create a scheduled GitHub action that runs daily and adds a commit to your repository. The workflow should:
+
+Use schedule with cron syntax to run once per day (must use specific hours/minutes, not wildcards)
+Include a step with your email 23ds3000149@ds.study.iitm.ac.in in its name
+Create a commit in each run
+Be located in .github/workflows/ directory",q45_github_action,,Later,,PDF file,GA4,https://github.com/Rajalakshmi12/IITM-Week-4-Action-Schedule,,
+46,What is the total English marks of students who scored 59 or more marks in Biology in groups 63-93 (including both groups)?,q46_tabula_marks,"marks, students, groups, total",,which Subject? Groups number,,GA4,21898,127.0.0.1:8000/api/?question=What is the total English marks of students who scored 59 or more marks in Biology in groups 63-93 (including both groups)?,
+47,"What is the markdown content of the PDF, formatted with prettier@3.4.2?",q47_pdf_markdown,"markdown, content, pdf, prettier",,,,GA4,,,
+48,,,,,,,,,,
+49,,,,,,,,,,
+50,,,,,,,,,,
+51,"This GZipped Apache log file (61MB) has 258,074 rows. Each row is an Apache web log entry for the site s-anand.net in May 2024. What is the number of successful GET requests for pages under /telugu/ from 11:00 until before 20:00 on Mondays?",q51_apache_get,"successful, GET, requests, under",,,,,,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=This GZipped Apache log file (61MB) has 258,074 rows. Each row is an Apache web log entry for the site s-anand.net in May 2024. What is the number of successful GET requests for pages under /telugu/ from 11:00 until before 20:00 on Mondays?""   -F ""file=@q51_s-anand.net-May-2024.gz""",
+52,"This GZipped Apache log file (61MB) has 258,074 rows. Each row is an Apache web log entry for the site s-anand.net in May 2024. Across all requests under kannada/ on 2024-05-07, how many bytes did the top IP address (by volume of downloads) download?",q52_apache_bytes,"web, log, bytes, download",Function payload too large,,,,,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=This GZipped Apache log file (61MB) has 258,074 rows. Each row is an Apache web log entry for the site s-anand.net in May 2024. Across all requests under kannada/ on 2024-05-07, how many bytes did the top IP address (by volume of downloads) download?""   -F ""file=@q52_s-anand.net-May-2024.gz""",
+53,"Parse the Sales Data:
+Read the provided JSON file containing 100 rows of sales data. Despite the truncated data (specifically the missing id), you must accurately extract the sales figures from each row. Sum the sales values across all 100 rows to provide a single aggregate figure that represents the total sales recorded. What is the total sales value?",q53_json_sales,"json, aggregate, total, extract, parse",q-parse-partial-json.jsonl,,,,,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=Parse the Sales Data, Read the provided JSON file containing 100 rows of sales data. Despite the truncated data, you must accurately extract the sales figures from each row. Sum the sales values across all 100 rows to provide a single aggregate figure that represents the total sales recorded. What is the total sales value?""   -F ""file=@q-parse-partial-json.jsonl",
+54,"As a data analyst at DataSure Technologies, you have been tasked with developing a script that processes a large JSON log file and counts the number of times a specific key, represented by the placeholder AWSH, appears in the JSON structure. How many times does AWSH appear as a key? Output the total number of occurrences",q54_key_count,"count, times, json, appear, key",q-extract-nested-json-keys.json,,,,,"curl -X POST ""http://localhost:8000/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F ""question=As a data analyst at DataSure Technologies, you have been tasked with developing a script that processes a large JSON log file and counts the number of times a specific key, represented by the placeholder AWSH, appears in the JSON structure. How many times does AWSH appear as a key? Output the total number of occurrences"" \
+  -F ""file=@q-extract-nested-json-keys.json""",
+55,,,,,,,,"SELECT post_id, timestamp, json_extract_string(json_extract(comments, '$[0]'), '$.stars.useful') AS useful_stars
+FROM social_media
+WHERE json_extract_string(json_extract(comments, '$[0]'), '$.stars.useful')::FLOAT >= 3 AND 
+timestamp > '2024-11-25T12:48:16.162Z'::TIMESTAMP
+ORDER BY timestamp DESC;",,
+56,,,,,,,,,,
+57,"As a digital forensics analyst at PixelGuard Solutions, your task is to reconstruct the original image from its scrambled pieces. You are provided with the 25 individual image pieces (put together as a single image). A mapping file detailing the original (row, col) position for each piece and its current (row, col) location. Here is the image. It is a 500x500 pixel image that has been cut into 25 (5x5) pieces:
+Upload the reconstructed image by moving the pieces from the scrambled position to the original position:",q57_reconstruct_image,"image, row, col, reconstruct, original",,,,,,"curl -X POST ""http://localhost:8000/api/"" \
+  -H ""Content-Type: multipart/form-data"" \
+  -F ""question=As a digital forensics analyst at PixelGuard Solutions, your task is to reconstruct the original image from its scrambled pieces. You are provided with the 25 individual image pieces (put together as a single image). A mapping file detailing the original (row, col) position for each piece and its current (row, col) location. Here is the image. It is a 500x500 pixel image that has been cut into 25 (5x5) pieces and Upload the reconstructed image by moving the pieces from the scrambled position to the original position"" \
+  -F ""file=@Question_57_files.zip""",
