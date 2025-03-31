@@ -12,27 +12,26 @@ What is the JSON output of the command? (Paste only the JSON body, not the heade
 What is the output of the command?",q3_readme_shasum,"readme, prettier, sha256sum, command",,,solution_q3.py,GA1,,,
 4,"Let's make sure you can write formulas in Google Sheets. Type this formula into Google Sheets. (It won't work in Excel)
 
-=SUM(ARRAY_CONSTRAIN(SEQUENCE(100, 100, 8, 13), 1, 10))
-What is the result?",q4_array_constraint,"formula,  sheet, array, constrain, array_constrain","Done,
+=SUM(ARRAY_CONSTRAIN(SEQUENCE(100, 100, 10, 4), 1, 10))What is the result?",q4_array_constraint,"formula,  sheet, array, constrain, array_constrain","Done,
 Working,
-Tested",,,GA1,665,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=Let's make sure you can write formulas in Google Sheets. Type this formula into Google Sheets. (It won't work in Excel) =SUM(ARRAY_CONSTRAIN(SEQUENCE(100, 100, 8, 13), 1, 10)) What is the result?""",
+Tested",,,GA1,280,"curl -X POST ""http://localhost:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=Let's make sure you can write formulas in Google Sheets. Type this formula into Google Sheets. (It won't work in Excel) =SUM(ARRAY_CONSTRAIN(SEQUENCE(100, 100, 8, 13), 1, 10)) What is the result?""",
 5,"Let's make sure you can write formulas in Excel. Type this formula into Excel.
 
 Note: This will ONLY work in Office 365.
 
-=SUM(TAKE(SORTBY({1,1,0,4,7,5,2,2,15,5,1,1,7,10,5,0}, {10,9,13,2,11,8,16,14,7,15,5,4,6,1,3,12}), 1, 1))
-What is the result?",q5_excel_sort,"excel, sort, formulas, formula, office",Done,,,GA1,10,,
+=SUM(TAKE(SORTBY({6,6,5,1,5,7,9,15,7,3,9,1,7,14,5,4}, {10,9,13,2,11,8,16,14,7,15,5,4,6,1,3,12}), 1, 11))
+What is the result?",q5_excel_sort,"excel, sort, formulas, formula, office",Done,,,GA1,68,,
 6,"Just above this paragraph, there's a hidden input with a secret value.
 
-What is the value in the hidden input?",q6_hidden_secret,"hidden, secret, paragraph, value",Hardcoded,Link: https://exam.sanand.workers.dev/tds-2025-01-ga1,,GA1,aofy98grpi,,
-7,"How many Wednesdays are there in the date range 1980-04-16 to 2009-02-11?
-The dates are in the year-month-day format. Include both the start and end date in your count. You can do this using any tool (e.g. Excel, Python, JavaScript, manually).",q7_day_dates,"Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays, Sundays, format, start, end, date, count",Soon,,,GA1,,"http://127.0.0.1:8000/api/?question=How%20many%20Wednesdays%20are%20there%20in%20the%20date%20range%201980-04-16%20to%202010-02-11?%20The%20dates%20are%20in%20the%20year-month-day%20format.%20Include%20both%20the%20start%20and%20end%20date%20in%20your%20count.%20You%20can%20do%20this%20using%20any%20tool%20(e.g.%20Excel,%20Python,%20JavaScript,%20manually).",
+What is the value in the hidden input?",q6_hidden_secret,"hidden, secret, paragraph, value",Hardcoded,Link: https://exam.sanand.workers.dev/tds-2025-01-ga1,,GA1,atrpc450xg,,
+7,"How many Wednesdays are there in the date range 1986-11-11 to 2013-08-26? The dates are in the year-month-day format. Include both the start and end date in your count. You can do this using any tool (e.g. Excel, Python, JavaScript, manually).",q7_day_dates,"Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays, Sundays, format, start, end, date, count",Soon,,,GA1,1398,"http://127.0.0.1:8000/api/?question=How%20many%20Wednesdays%20are%20there%20in%20the%20date%20range%201980-04-16%20to%202010-02-11?%20The%20dates%20are%20in%20the%20year-month-day%20format.%20Include%20both%20the%20start%20and%20end%20date%20in%20your%20count.%20You%20can%20do%20this%20using%20any%20tool%20(e.g.%20Excel,%20Python,%20JavaScript,%20manually).",
 8,"Download and unzip file which has a single extract.csv file inside.
 
-What is the value in the ""answer"" column of the CSV file?",q8_extract_csv,"unzip, extract, answer, value, column",,,,GA1,04ee0,"$ curl -X POST ""http://127.0.0.1:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=What is the value in the \""answer\"" column of the CSV file?""   -F ""file=@q-extract-csv-zip.zip""",
+What is the value in the ""answer"" column of the CSV file?",q8_extract_csv,"unzip, extract, answer, value, column",,,,GA1,bd6a4,"$ curl -X POST ""http://127.0.0.1:8000/api/""   -H ""Content-Type: multipart/form-data""   -F ""question=What is the value in the \""answer\"" column of the CSV file?""   -F ""file=@q-extract-csv-zip.zip""",
 9,"Let's make sure you know how to use JSON. Sort this JSON array of objects by the value of the age field. In case of a tie, sort by the name field. Paste the resulting JSON below without any spaces or newlines.
 
-[{""name"":""Alice"",""age"":48},{""name"":""Bob"",""age"":69},{""name"":""Charlie"",""age"":27},{""name"":""David"",""age"":26},{""name"":""Emma"",""age"":68},{""name"":""Frank"",""age"":90},{""name"":""Grace"",""age"":78},{""name"":""Henry"",""age"":27},{""name"":""Ivy"",""age"":85},{""name"":""Jack"",""age"":74},{""name"":""Karen"",""age"":43},{""name"":""Liam"",""age"":52},{""name"":""Mary"",""age"":19},{""name"":""Nora"",""age"":36},{""name"":""Oscar"",""age"":5},{""name"":""Paul"",""age"":11}]",q9_json_sort,"json, sort, spaces, newlines, field","Deployed-
+[{""name"":""Alice"",""age"":80},{""name"":""Bob"",""age"":48},{""name"":""Charlie"",""age"":47},{""name"":""David"",""age"":64},{""name"":""Emma"",""age"":64},{""name"":""Frank"",""age"":22},{""name"":""Grace"",""age"":84},{""name"":""Henry"",""age"":99},{""name"":""Ivy"",""age"":65},{""name"":""Jack"",""age"":38},{""name"":""Karen"",""age"":98},{""name"":""Liam"",""age"":1},{""name"":""Mary"",""age"":3},{""name"":""Nora"",""age"":56},{""name"":""Oscar"",""age"":16},{""name"":""Paul"",""age"":26}]
+",q9_json_sort,"json, sort, spaces, newlines, field","Deployed-
 Tested-
 Vercel-
 With-
@@ -149,7 +148,7 @@ Success",,,GA2,https://github.com/23f2000006/tds_project2_alt.git,"curl -X POST 
 
 Some code given
 
-What is the result? (It should be a 5-character string)",q22_google_colab,"program, access",,,,GA2,702a6,,
+What is the result? (It should be a 5-character string)",q22_google_colab,"program, access",,,,GA2,57b75,,
 23,Create a new Google Colab notebook and run this code (after fixing a mistake in it) to calculate the number of pixels with a certain minimum brightness What is the result,q23_pixels_brightness,"number pixels, brightness, calculate",,,,GA2,7,,
 24,"Download this  which has the marks of 100 imaginary students.
 
@@ -253,7 +252,7 @@ Send the image_url as a base64 URL of the image above. CAREFUL: Do not modify th
 35,,,,,,,,,,
 36,,,,,,,,,,
 37,,,,,,,,,,
-38,What is the total number of ducks across players on page number 17 of ESPN Cricinfo's ODI batting stats?,q38_ducks_count,"number, ducks, players, page, espn, odi, batting, stats",Done,,,GA4,140,127.0.0.1:8000/api/ask_question/?question=What is the total number of ducks across players on page number 17 of ESPN Cricinfo%27s ODI batting stats?,
+38,What is the total number of ducks across players on page number 26 of ESPN Cricinfo's ODI batting stats?,q38_ducks_count,"number, ducks, players, page, espn, odi, batting, stats",Done,,,GA4,85,127.0.0.1:8000/api/ask_question/?question=What is the total number of ducks across players on page number 17 of ESPN Cricinfo%27s ODI batting stats?,
 39,"Extract Data: Retrieve movie information from IMDb for all films that have a rating between 2 and 7.
 Format Data: Structure the extracted information into a JSON format containing the following fields:
 id: The unique identifier for the movie on IMDb.
@@ -272,7 +271,7 @@ Use schedule with cron syntax to run once per day (must use specific hours/minut
 Include a step with your email 23ds3000149@ds.study.iitm.ac.in in its name
 Create a commit in each run
 Be located in .github/workflows/ directory",q45_github_action,,Later,,PDF file,GA4,https://github.com/Rajalakshmi12/IITM-Week-4-Action-Schedule,,
-46,What is the total English marks of students who scored 59 or more marks in Biology in groups 63-93 (including both groups)?,q46_tabula_marks,"marks, students, groups, total",,which Subject? Groups number,,GA4,21898,127.0.0.1:8000/api/?question=What is the total English marks of students who scored 59 or more marks in Biology in groups 63-93 (including both groups)?,
+46,What is the total English marks of students who scored 32 or more marks in Maths in groups 9-32 (including both groups)?,q46_tabula_marks,"marks, students, groups, total",,which Subject? Groups number,,GA4,29963,127.0.0.1:8000/api/?question=What is the total English marks of students who scored 59 or more marks in Biology in groups 63-93 (including both groups)?,
 47,"What is the markdown content of the PDF, formatted with prettier@3.4.2?",q47_pdf_markdown,"markdown, content, pdf, prettier",,,,GA4,,,
 48,,,,,,,,,,
 49,,,,,,,,,,
