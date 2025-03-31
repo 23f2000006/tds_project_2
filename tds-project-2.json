@@ -1,0 +1,82 @@
+[
+    {
+        "name": "GA1 - General Topics",
+        "questions": [
+            {"Assignment": "GA1", "Category": "Editor", "Question": "VS Code Version"},
+            {"Assignment": "GA1", "Category": "Python tools", "Question": "Make HTTP requests with uv"},
+            {"Assignment": "GA1", "Category": "JavaScript tools", "Question": "Run command with npx"},
+            {"Assignment": "GA1", "Category": "Sheets", "Question": "Use Google Sheets"},
+            {"Assignment": "GA1", "Category": "Excel", "Question": "Use Excel"},
+            {"Assignment": "GA1", "Category": "DevTools", "Question": "Use DevTools"},
+            {"Assignment": "GA1", "Category": "...", "Question": "Count Wednesdays"},
+            {"Assignment": "GA1", "Category": "extract", "Question": "Extract CSV from a ZIP"},
+            {"Assignment": "GA1", "Category": "Json", "Question": "Use JSON"},
+            {"Assignment": "GA1", "Category": "JavaScript tools", "Question": "Multi-cursor edits to convert to JSON"},
+            {"Assignment": "GA1", "Category": "styling or extraction", "Question": "CSS selectors"},
+            {"Assignment": "GA1", "Category": "Unicode", "Question": "Process files with different encodings"},
+            {"Assignment": "GA1", "Category": "Github", "Question": "Use GitHub"},
+            {"Assignment": "GA1", "Category": "Bash", "Question": "Replace across files"},
+            {"Assignment": "GA1", "Category": "Extract", "Question": "List files and attributes"},
+            {"Assignment": "GA1", "Category": "Extract", "Question": "Move and rename files"},
+            {"Assignment": "GA1", "Category": "Extract", "Question": "Compare files"},
+            {"Assignment": "GA1", "Category": "Database", "Question": "SQL: Ticket Sales"}
+        ]
+    },
+    {
+        "name": "GA2 - Deployment Tools",
+        "questions": [
+            {"Assignment": "GA1", "Category": "Markdown", "Question": "Write documentation in Markdown"},
+            {"Assignment": "GA1", "Category": "Image Processing", "Question": "Compress an image"},
+            {"Assignment": "GA1", "Category": "Web Hosting", "Question": "Host your portfolio on GitHub Pages"},
+            {"Assignment": "GA1", "Category": "Colab", "Question": "Use Google Colab"},
+            {"Assignment": "GA1", "Category": "Deployment", "Question": "Deploy a Python API to Vercel"},
+            {"Assignment": "GA1", "Category": "CI/CD", "Question": "Create a GitHub Action"},
+            {"Assignment": "GA1", "Category": "Docker", "Question": "Push an image to Docker Hub"},
+            {"Assignment": "GA1", "Category": "FastAPI", "Question": "Write a FastAPI server to serve data"},
+            {"Assignment": "GA1", "Category": "LLM", "Question": "Run a local LLM with Llamafile"}
+        ]
+    },
+    {
+        "name": "GA3 - Large Language Models",
+        "questions": [
+            {"Assignment": "GA3", "Category": "LLM", "Question": "LLM Sentiment Analysis"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "LLM Token Cost"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "Generate addresses with LLMs"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "LLM Vision"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "LLM Embeddings"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "Embedding Similarity"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "Vector Databases"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "Function Calling"},
+            {"Assignment": "GA3", "Category": "LLM", "Question": "Get an LLM to say Yes"}
+        ]
+    },
+    {
+        "name": "GA4 - Data Sourcing",
+        "questions": [
+            {"Assignment": "GA4", "Category": "Scraping", "Question": "Import HTML to Google Sheets"},
+            {"Assignment": "GA4", "Category": "Scraping", "Question": "Scrape IMDb movies"},
+            {"Assignment": "GA4", "Category": "Scraping", "Question": "Wikipedia Outline"},
+            {"Assignment": "GA4", "Category": "Scraping", "Question": "Scrape the BBC Weather API"},
+            {"Assignment": "GA4", "Category": "API", "Question": "Find the bounding box of a city"},
+            {"Assignment": "GA4", "Category": "API", "Question": "Search Hacker News"},
+            {"Assignment": "GA4", "Category": "API", "Question": "Find newest GitHub user"},
+            {"Assignment": "GA4", "Category": "CI/CD", "Question": "Create a Scheduled GitHub Action"},
+            {"Assignment": "GA4", "Category": "PDF Processing", "Question": "Extract tables from PDF"},
+            {"Assignment": "GA4", "Category": "PDF Processing", "Question": "Convert a PDF to Markdown"}
+        ]
+    },
+    {
+        "name": "GA5 - Data Preparation",
+        "questions": [
+            {"Assignment": "GA5", "Category": "Excel Processing", "Question": "Clean up Excel sales data"},
+            {"Assignment": "GA5", "Category": "Excel Processing", "Question": "Clean up student marks"},
+            {"Assignment": "GA5", "Category": "Log Analysis", "Question": "Apache log requests"},
+            {"Assignment": "GA5", "Category": "Log Analysis", "Question": "Apache log downloads"},
+            {"Assignment": "GA5", "Category": "JSON Processing", "Question": "Parse partial JSON"},
+            {"Assignment": "GA5", "Category": "JSON Processing", "Question": "Extract nested JSON keys"},
+            {"Assignment": "GA5", "Category": "Database", "Question": "DuckDB: Social Media Interactions"},
+            {"Assignment": "GA5", "Category": "Audio Processing", "Question": "Transcribe a YouTube video"},
+            {"Assignment": "GA5", "Category": "Image Processing", "Question": "Reconstruct an image"}
+        ]
+    }
+]

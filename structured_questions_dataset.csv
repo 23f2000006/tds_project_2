@@ -1,0 +1,56 @@
+Assignment,Category,Question
+GA1,Editor,VS Code Version
+GA1,Python tools,Make HTTP requests with uv
+GA1,JavaScript tools,Run command with npx
+GA1,Sheets,Use Google Sheets
+GA1,Excel,Use Excel
+GA1,DevTools,Use DevTools
+GA1,...,Count Wednesdays
+GA1,extract,Extract CSV from a ZIP
+GA1,Json,Use Json
+GA1,JavaScript tools,Multi-cursor edits to convert to Json
+GA1,styling or extraction,CSS selectors"
+GA1,Unicode,Process files with different encodings
+GA1,Github,Use GitHub
+GA1,Bash,Replace across files
+GA1,Extract,List files and attributes
+GA1,Extract,Move and rename files
+GA1,Extract,Compare files
+GA1,Database,SQL: Ticket Sales
+GA2,Markdown,Write documentation in Markdown
+GA2,Image Processing,Compress an image
+GA2,Web Hosting,Host your portfolio on GitHub Pages
+GA2,Colab,Use Google Colab
+GA2,Deployment,Deploy a Python API to Vercel
+GA2,CI/CD,Create a GitHub Action
+GA2,Docker,Push an image to Docker Hub
+GA2,FastAPI,Write a FastAPI server to serve data
+GA2,LLM,Run a local LLM with Llamafile
+GA3,LLM,LLM Sentiment Analysis
+GA3,LLM,LLM Token Cost
+GA3,LLM,Generate addresses with LLMs
+GA3,LLM,LLM Vision
+GA3,LLM,LLM Embeddings
+GA3,LLM,Embedding Similarity
+GA3,LLM,Vector Databases
+GA3,LLM,Function Calling
+GA3,LLM,Get an LLM to say Yes
+GA4,Scraping,Import HTML to Google Sheets
+GA4,Scraping,Scrape IMDb movies
+GA4,Scraping,Wikipedia Outline
+GA4,Scraping,Scrape the BBC Weather API
+GA4,API,Find the bounding box of a city
+GA4,API,Search Hacker News
+GA4,API,Find newest GitHub user
+GA4,CI/CD,Create a Scheduled GitHub Action
+GA4,PDF Processing,Extract tables from PDF
+GA4,PDF Processing,Convert a PDF to Markdown
+GA5,Excel Processing,Clean up Excel sales data
+GA5,Excel Processing,Clean up student marks
+GA5,Log Analysis,Apache log requests
+GA5,Log Analysis,Apache log downloads
+GA5,JSON Processing,Parse partial JSON
+GA5,JSON Processing,Extract nested JSON keys
+GA5,Database,DuckDB: Social Media Interactions
+GA5,Audio Processing,Transcribe a YouTube video
+GA5,Image Processing,Reconstruct an image

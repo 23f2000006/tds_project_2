@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+requests
+pandas
+zipfile36
+importlib
+pandas
+beautifulsoup4
+fastapi
+uvicorn
+feedparser
+pdfplumber
+tabula-py
+numpy
+python-multipart
+tiktoken
+Image

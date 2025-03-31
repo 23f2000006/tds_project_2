@@ -1,0 +1,23 @@
+{
+  "name": "tds_project_2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/23f2000006/tds_project_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/23f2000006/tds_project_2/issues"
+  },
+  "homepage": "https://github.com/23f2000006/tds_project_2#readme",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.5.3"
+  }
+}
