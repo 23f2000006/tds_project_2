@@ -9,7 +9,7 @@ GA1,...,Count Wednesdays
 GA1,extract,Extract CSV from a ZIP
 GA1,Json,Use Json
 GA1,JavaScript tools,Multi-cursor edits to convert to Json
-GA1,styling or extraction,CSS selectors"
+GA1,styling or extraction,CSS selectors
 GA1,Unicode,Process files with different encodings
 GA1,Github,Use GitHub
 GA1,Bash,Replace across files

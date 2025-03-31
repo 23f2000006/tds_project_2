@@ -38,8 +38,6 @@ async def read_api_root():
     return {"message": "Welcome to Vercel POST!"}
 
 
-
-
 def load_questions(csv_path: str):
     try:
         df = pd.read_csv(csv_path)
@@ -69,7 +67,7 @@ def find_closest_question(input_question: str, df: pd.DataFrame):
         return ''
 
 
-@app.post("/api/")
+@app.post("/api/post_ask_question/")
 async def ask_question(question: str = Form(..., title="User Question"),file: UploadFile = File(None)):
     """Finds the closest question from CSV based on keyword matches and returns the corresponding function name."""
     try:
